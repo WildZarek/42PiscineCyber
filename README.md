@@ -10,7 +10,7 @@ This project is aimed to introduce us into the fascinating world of **Open Sourc
 
 First, we are provided with this screenshot of a packet trace from Wireshack sniffer:
 
-![Packet Trace from Wireshack](/.assets/packet_trace.png)
+![Packet Trace from Wireshack](/.assets/img/packet_trace.png)
 
 We need to found the social media used by that user, so let's do a basic search online.<br>
 For usernames, I like to use the following website: [IDCrawl](https://www.idcrawl.com)
@@ -18,9 +18,12 @@ For usernames, I like to use the following website: [IDCrawl](https://www.idcraw
 But, if you have Kali Linux or any Linux distribution focused to Cybersecurity,<br>
 you could use a tool named **sherlock**. Choose what you prefer.
 <br>
+
 [[Search Results]](https://www.idcrawl.com/u/ihatetetris42)
 
 <!-- link to image for X reference -->
+
+<!-- link image to sherlock usage -->
 
 #### ex01
 
@@ -38,16 +41,16 @@ After checking that profile, we found the real user behind the fake account.
 Continuing our investigation, we need to find geolocation of that user.<br>
 First, we can search for any other social media accounts related to him (**liam_up2u**).
 <br>
-![IDCrawl for Liam](/.assets/liam_idcrawl.png)
+![IDCrawl for Liam](/.assets/img/liam_idcrawl.png)
 [[Search Results]](https://www.idcrawl.com/u/liam_up2u)
 <br>
-![Liam's Instagram Profile](/.assets/liam_ig.png)
+![Liam's Instagram Profile](/.assets/img/liam_ig.png)
 [[IG's liam]](https://www.instagram.com/liam_up2u/)
 
 And if we go to this Instagram's profile, we can see just one photo uploaded.<br>
 So, we can download that image and search by images at Google Images.
 
-![Liam's Location](/.assets/liam_location.png)
+![Liam's Location](/.assets/img/liam_location.png)
 
 > [!TIP]
 > This technique is also know as **Imagery intelligence** ([IMINT](https://en.wikipedia.org/wiki/Imagery_intelligence)).
@@ -65,5 +68,32 @@ For that pourpouse, you can use CLI tools like **Exiftool**, but I had prefer to
 <br>
 This website provide us with some useful data about an image, of course, metadata too.
 
-![Image Metadata](/.assets/fotoforensics_tool.png)
+![Image Metadata](/.assets/img/fotoforensics_tool.png)
 
+## Celulle01
+
+This project is aimed to introduce us into the fascinating world of **Web Exploitation** through common vulnerabilities.
+
+### Procedure
+
+#### ex00
+
+#### ex01
+
+#### ex02
+
+#### ex03
+
+## Celulle02
+
+This project is aimed to introduce us into the fascinating world of **Cryptography**.
+
+### Procedure
+
+#### ex00
+
+#### ex01
+
+#### ex02
+
+#### ex03
