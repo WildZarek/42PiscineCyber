@@ -53,7 +53,7 @@ So, we can download that image and search by images at Google Images.
 > This technique is also know as **Imagery intelligence** ([IMINT](https://en.wikipedia.org/wiki/Imagery_intelligence)).
 
 Finally, we got results pointing to **Argañín**, province of Zamora, at Castile and León (Spain).
-
+<br>
 [Result 1](https://es.wikipedia.org/wiki/Arga%C3%B1%C3%ADn) | [Result 2](https://pueblosdesayago.com/2020/10/25/la-iglesia-de-la-natividad-de-la-virgen-de-arganin/)
 
 #### ex03
