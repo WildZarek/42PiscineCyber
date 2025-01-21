@@ -39,7 +39,7 @@ Continuing our investigation, we need to find geolocation of that user.<br>
 First, we can search for any other social media accounts related to him (**liam_up2u**).
 <br>
 ![IDCrawl for Liam](/.assets/liam_idcrawl.png)
-[[Search Results](https://www.idcrawl.com/u/liam_up2u)
+[[Search Results]](https://www.idcrawl.com/u/liam_up2u)
 <br>
 ![Liam's Instagram Profile](/.assets/liam_ig.png)
 [[IG's liam]](https://www.instagram.com/liam_up2u/)
@@ -59,7 +59,7 @@ Finally, we got results pointing to **Argañín**, province of Zamora, at Castil
 #### ex03
 
 Our investigation is ending, but last, we are asked to find the phone model which that photo was taken.<br>
-Time to explore through metadata!
+Time to explore through metadata! :mag_right:
 
 For that pourpouse, you can use CLI tools like **Exiftool**, but I had prefer to use [fotoforensics.com](https://fotoforensics.com)
 <br>
