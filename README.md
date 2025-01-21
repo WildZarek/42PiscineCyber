@@ -2,7 +2,7 @@
 
 ## Celulle00
 
-This project is aimed to introduce us into the fascinating world of Open Source Intelligence (OSINT).
+This project is aimed to introduce us into the fascinating world of **Open Source Intelligence** (OSINT).
 
 ### Procedure
 
@@ -14,11 +14,11 @@ First, we are provided with this screenshot of a packet trace from Wireshack sni
 
 We need to found the social media used by that user, so let's do a basic search online.<br>
 For usernames, I like to use the following website: [IDCrawl](https://www.idcrawl.com)
-<br>
-But, if you have Kali Linux or any Linux distribution focused to Cybersecurity,
+
+But, if you have Kali Linux or any Linux distribution focused to Cybersecurity,<br>
 you could use a tool named **sherlock**. Choose what you prefer.
 <br>
-[Search Result](https://www.idcrawl.com/u/ihatetetris42)
+[[Search Results]](https://www.idcrawl.com/u/ihatetetris42)
 
 <!-- link to image for X reference -->
 
@@ -39,10 +39,10 @@ Continuing our investigation, we need to find geolocation of that user.<br>
 First, we can search for any other social media accounts related to him (**liam_up2u**).
 <br>
 ![IDCrawl for Liam](/.assets/liam_idcrawl.png)
-[(Searching)](https://www.idcrawl.com/u/liam_up2u)
+[[Search Results](https://www.idcrawl.com/u/liam_up2u)
 <br>
 ![Liam's Instagram Profile](/.assets/liam_ig.png)
-[(Found)](https://www.instagram.com/liam_up2u/)
+[[IG's liam]](https://www.instagram.com/liam_up2u/)
 
 And if we go to this Instagram's profile, we can see just one photo uploaded.<br>
 So, we can download that image and search by images at Google Images.
@@ -58,9 +58,9 @@ Finally, we got results pointing to **Argañín**, province of Zamora, at Castil
 
 #### ex03
 
-Our investigation is ending, but last, we are asked to find the phone model
-which that photo was taken. Time to explore through metadata!
-<br>
+Our investigation is ending, but last, we are asked to find the phone model which that photo was taken.<br>
+Time to explore through metadata!
+
 For that pourpouse, you can use CLI tools like **Exiftool**, but I had prefer to use [fotoforensics.com](https://fotoforensics.com)
 <br>
 This website provide us with some useful data about an image, of course, metadata too.
