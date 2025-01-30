@@ -106,16 +106,40 @@ So entering the folder **flag/** we discover the `flag.txt` file with the soluti
 
 Next exercise seems solved in a similar maner, but this time we do not have any hint.
 
+The URL is: [http://cybersec.42malaga.com:3318/](http://cybersec.42malaga.com:3318/)
+
 ![Web Exercise 01](/.assets/img/weasel01_web.png)
 
 Let's apply what we learned in previous exercise, we can think about the same vulnerability,
-so using the same technique we will use wfuzz to enumerate hidden directories.
+so using the same technique we will use `wfuzz` to enumerate hidden directories.
 
 ![Fuzzing](/.assets/img/weasel01_result.png)
 
+Go to the URL of that resource and check its content:
+
+![Web Exercise 01 Vulnerability](/.assets/img/weasel01_vuln.png)
+
 #### ex02
 
+We are provided with another URL: [http://cybersec.42malaga.com:3319/](http://cybersec.42malaga.com:3319/)
+
+This time, we see a little form where we can input the filename which we are looking for.
+
+You could try to put `flag.txt` but in this case, we get this message:
+
+![Web Exercise 02](/.assets/img/weasel02_msg.png)
+
+Maybe the flag is in another directory, so we can think first in **Path Traversal Vulnerability**.
+
+![Web Exercise 02 Vulnerability](/.assets/img/weasel02_vuln.png)
+
 #### ex03
+
+Finally, we have another URL: [http://cybersec.42malaga.com:3320/](http://cybersec.42malaga.com:3320/)
+
+We can see a login form without any additional info. So first thing you can try is **SQL Injection Vulnerability**.
+
+![Web Exercise 03 Vulnerability](/.assets/img/weasel02_vuln.png)
 
 ## Celulle02
 
@@ -125,8 +149,51 @@ This project is aimed to introduce us into the fascinating world of **Cryptograp
 
 #### ex00
 
+In this first exercise we need to discover what algorithm was applied to the flag and we are hinted about using `Cyberchef`.
+
+![Cryptography Exercise 00](/.assets/img/gecko00.png)
+
 #### ex01
+
+Similar exercise, but now we will learn about deciphering multiple algorithms and again, we are hinted about using `Cyberchef`.
+
+![Cryptography Exercise 01](/.assets/img/gecko01.png)
 
 #### ex02
 
+In this case, we will learn about hashes and how to decrypt them. We are hinted about using `hashcat`.
+
+> [!WARNING]  
+> We do not have hashcat installed on the campus machines.
+> 
+> But that is not a problem because there is another way to solve this.
+
+[CrackStation](https://crackstation.net/) is a website where you can try to crack most of the common hashes used.
+
+So let's try if we have luck!
+
+![Cryptography Exercise 02](/.assets/img/gecko02.png)
+
 #### ex03
+
+Last one. Now we have a little dictionary with words that could be part of the password.
+
+We have the hash but we can't crack it without knowing the correct password to do that. Or maybe yes?
+
+As seen in the subject of the exercise, we NEED to use `John The Ripper`.
+
+Again, in my campus we don't have this tool, I could try to install it from Github or 
+
+use some Linux distro focused on Cybersecurity, like Kali Linux.
+
+First of all, I solved this because some others students give me the hint about a website called [hashes.com](https://hashes.com/en/decrypt/hash)
+
+![Cryptography Exercise 03](/.assets/img/gecko03_result.png)
+
+But to be honest, that is not the best way to solve this exercise because we SHOULD use the correct tool (as explained in the subject).
+
+So I installed Kali Linux as a VM and this is result:
+
+![Cryptography Exercise 03](/.assets/img/gecko03_john.png)
+
+# Happy Hacking! ☠
