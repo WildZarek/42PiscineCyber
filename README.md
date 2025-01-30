@@ -84,19 +84,17 @@ We are provided with the following URL: [http://cybersec.42malaga.com:3317/](htt
 
 ![Web Exercise 00](/.assets/img/weasel00_web.png)
 
-If we take a look at the link "HINT", we can see that are pointing to a file inside another folder.
-
+If we take a look at the link "HINT", we can see that are pointing to a file inside another folder.<br>
 Let's try if we can see more files inside that folder just removing the `hint.html` file from the URL.
 
 ![Web Exercise 00 Vulnerability](/.assets/img/weasel00_vuln.png)
 
-As we can see, the web is vulnerable to Directory Listing due to a bad configuration of the HTTP server.
-
+As we can see, the web is vulnerable to Directory Listing due to a bad configuration of the HTTP server.<br>
 So entering the folder **flag/** we discover the `flag.txt` file with the solution to this exercise.
 
 > [!TIP]
-> In a real scenario, you could use a technique called **Fuzzing** to discover directories, files, subdomains and many more.
-> We will see more about this in the next exercise.
+> In a real scenario, you could use a technique called **Fuzzing** to discover directories, files,<br>
+> subdomains and many more. We will see more about this in the next exercise.
 
 ###### Example of Fuzzing with wfuzz
 
@@ -110,8 +108,8 @@ The URL is: [http://cybersec.42malaga.com:3318/](http://cybersec.42malaga.com:33
 
 ![Web Exercise 01](/.assets/img/weasel01_web.png)
 
-Let's apply what we learned in previous exercise, we can think about the same vulnerability,
-so using the same technique we will use `wfuzz` to enumerate hidden directories.
+Let's apply what we learned in previous exercise, we can think about the same vulnerability,<br>
+so using the same technique we will use `wfuzz` tool to enumerate hidden directories.
 
 ![Fuzzing](/.assets/img/weasel01_result.png)
 
@@ -123,8 +121,7 @@ Go to the URL of that resource and check its content:
 
 We are provided with another URL: [http://cybersec.42malaga.com:3319/](http://cybersec.42malaga.com:3319/)
 
-This time, we see a little form where we can input the filename which we are looking for.
-
+This time, we see a little form where we can input the filename which we are looking for.<br>
 You could try to put `flag.txt` but in this case, we get this message:
 
 ![Web Exercise 02](/.assets/img/weasel02_msg.png)
@@ -149,13 +146,15 @@ This project is aimed to introduce us into the fascinating world of **Cryptograp
 
 #### ex00
 
-In this first exercise we need to discover what algorithm was applied to the flag and we are hinted about using `Cyberchef`.
+In this first exercise we need to discover what algorithm was applied to the flag<br>
+and we are hinted about using `Cyberchef` tool (is a website).
 
 ![Cryptography Exercise 00](/.assets/img/gecko00.png)
 
 #### ex01
 
-Similar exercise, but now we will learn about deciphering multiple algorithms and again, we are hinted about using `Cyberchef`.
+Similar exercise, but now we will learn about deciphering multiple algorithms and again,<br>
+we are hinted about using `Cyberchef` tool.
 
 ![Cryptography Exercise 01](/.assets/img/gecko01.png)
 
@@ -164,8 +163,7 @@ Similar exercise, but now we will learn about deciphering multiple algorithms an
 In this case, we will learn about hashes and how to decrypt them. We are hinted about using `hashcat`.
 
 > [!WARNING]  
-> We do not have hashcat installed on the campus machines.
-> 
+> We do not have hashcat installed on the campus machines.<br>
 > But that is not a problem because there is another way to solve this.
 
 [CrackStation](https://crackstation.net/) is a website where you can try to crack most of the common hashes used.
@@ -176,20 +174,19 @@ So let's try if we have luck!
 
 #### ex03
 
-Last one. Now we have a little dictionary with words that could be part of the password.
-
-We have the hash but we can't crack it without knowing the correct password to do that. Or maybe yes?
-
+Last one. Now we have a little dictionary with words that could be part of the password.<br>
+We have the hash but we can't crack it without knowing the correct password to do that. Or maybe yes?<br>
 As seen in the subject of the exercise, we NEED to use `John The Ripper`.
 
-Again, in my campus we don't have this tool, I could try to install it from Github or 
-use some Linux distro focused on Cybersecurity, like Kali Linux.
+Again, in my campus we don't have this tool, I could try to install it from Github<br>
+or use some Linux distro focused on Cybersecurity, like Kali Linux.
 
 First of all, I solved this because some other students gave me the hint about a website called [hashes.com](https://hashes.com/en/decrypt/hash)
 
 ![Cryptography Exercise 03](/.assets/img/gecko03_result.png)
 
-But to be honest, that is not the best way to solve this exercise because we SHOULD use the correct tool (as explained in the subject).
+But to be honest, that is not the best way to solve this exercise<br>
+because we SHOULD use the correct tool (as explained in the subject).
 
 So I installed Kali Linux as a VM and here is the result:
 
