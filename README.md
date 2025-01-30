@@ -16,7 +16,7 @@ We need to found the social media used by that user, so let's do a basic search 
 For usernames, I like to use the following website: [IDCrawl](https://www.idcrawl.com)
 
 But, if you have Kali Linux or any Linux distribution focused to Cybersecurity,<br>
-you could use a tool named **sherlock**. Choose what you prefer.
+you could use a tool named `sherlock`. Choose what you prefer.
 <br>
 
 [[Search Results]](https://www.idcrawl.com/u/ihatetetris42)
@@ -66,7 +66,7 @@ Finally, we got results pointing to **Argañín**, province of Zamora, at Castil
 Our investigation is ending, but last, we are asked to find the phone model which that photo was taken.<br>
 Time to explore through metadata! :mag_right:
 
-For that pourpouse, you can use CLI tools like **Exiftool**, but I had prefer to use [fotoforensics.com](https://fotoforensics.com)
+For that pourpouse, you can use CLI tools like `Exiftool`, but I had prefer to use [fotoforensics.com](https://fotoforensics.com)
 <br>
 This website provide us with some useful data about an image, of course, metadata too.
 
