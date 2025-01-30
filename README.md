@@ -8,7 +8,7 @@ This project is aimed to introduce us into the fascinating world of **Open Sourc
 
 #### ex00
 
-First, we are provided with this screenshot of a packet trace from Wireshack sniffer:
+First, we are provided with this screenshot of a packet trace from `Wireshack` sniffer:
 
 ![Packet Trace from Wireshack](/.assets/img/packet_trace.png)
 
@@ -139,7 +139,7 @@ Finally, we have another URL: [http://cybersec.42malaga.com:3320/](http://cybers
 
 We can see a login form without any additional info. So first thing you can try is **SQL Injection Vulnerability**.
 
-![Web Exercise 03 Vulnerability](/.assets/img/weasel02_vuln.png)
+![Web Exercise 03 Vulnerability](/.assets/img/weasel03_vuln.png)
 
 ## Celulle02
 
@@ -183,16 +183,15 @@ We have the hash but we can't crack it without knowing the correct password to d
 As seen in the subject of the exercise, we NEED to use `John The Ripper`.
 
 Again, in my campus we don't have this tool, I could try to install it from Github or 
-
 use some Linux distro focused on Cybersecurity, like Kali Linux.
 
-First of all, I solved this because some others students give me the hint about a website called [hashes.com](https://hashes.com/en/decrypt/hash)
+First of all, I solved this because some other students gave me the hint about a website called [hashes.com](https://hashes.com/en/decrypt/hash)
 
 ![Cryptography Exercise 03](/.assets/img/gecko03_result.png)
 
 But to be honest, that is not the best way to solve this exercise because we SHOULD use the correct tool (as explained in the subject).
 
-So I installed Kali Linux as a VM and this is result:
+So I installed Kali Linux as a VM and here is the result:
 
 ![Cryptography Exercise 03](/.assets/img/gecko03_john.png)
 
