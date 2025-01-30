@@ -102,7 +102,7 @@ So entering the folder **flag/** we discover the `flag.txt` file with the soluti
 
 #### ex01
 
-Next exercise seems solved in a similar maner, but this time we do not have any hint.
+Next exercise seems solved in a similar manner, but this time we do not have any hint.
 
 The URL is: [http://cybersec.42malaga.com:3318/](http://cybersec.42malaga.com:3318/)
 
