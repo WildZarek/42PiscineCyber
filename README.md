@@ -1,4 +1,4 @@
-# Piscine Discovery Ciberseguridad
+# Piscine Discovery Cybersecurity
 
 ## Celulle00
 
@@ -21,20 +21,22 @@ you could use a tool named **sherlock**. Choose what you prefer.
 
 [[Search Results]](https://www.idcrawl.com/u/ihatetetris42)
 
-<!-- link to image for X reference -->
+![X Account of ihatetetris42](/.assets/img/x_ihatetetris42.png)
 
-<!-- link image to sherlock usage -->
+###### Example with Sherlock
+
+![Sherlock Usage](/.assets/img/tyto00_sherlock.png)
 
 #### ex01
 
 Now, we are asked to found the real user account because this appears to be a fake profile.<br>
 Easiest way is to check what accounts this user is following, which is only one. Let's take a look.
 
-<!-- insert image to following users -->
+![Sherlock Usage](/.assets/img/ihatetetris42_follows.png)
 
 After checking that profile, we found the real user behind the fake account.
 
-<!-- inser image to header of X account -->
+![X Account of liam_up2u](/.assets/img/x_liam_up2u.png)
 
 #### ex02
 
@@ -77,6 +79,28 @@ This project is aimed to introduce us into the fascinating world of **Web Exploi
 ### Procedure
 
 #### ex00
+
+We are provided with the following URL: [http://cybersec.42malaga.com:3317/](http://cybersec.42malaga.com:3317/)
+
+![Web Exercise 01](/.assets/img/weasel00_web.png)
+
+If we take a look at the link "HINT", we can see that are pointing to a file inside another folder.
+
+Let's try if we can see more files inside that folder just removing the `hint.html` file from the URL.
+
+![Web Exercise 01 Vulnerability](/.assets/img/weasel00_vuln.png)
+
+As we can see, the web is vulnerable to Directory Listing due to a bad configuration of the http server.
+
+So entering the folder **flag/** we discover the `flag.txt` file with the solution to this exercise.
+
+> [!TIP]
+> In a real scenario, you could use a technique called Fuzzing to discover directories, files, subdomains and many more.
+> We will see more about this in the next exercise.
+
+###### Example of Fuzzing with wfuzz
+
+![Fuzzing](/.assets/img/weasel00_result.png)
 
 #### ex01
 
