@@ -82,20 +82,20 @@ This project is aimed to introduce us into the fascinating world of **Web Exploi
 
 We are provided with the following URL: [http://cybersec.42malaga.com:3317/](http://cybersec.42malaga.com:3317/)
 
-![Web Exercise 01](/.assets/img/weasel00_web.png)
+![Web Exercise 00](/.assets/img/weasel00_web.png)
 
 If we take a look at the link "HINT", we can see that are pointing to a file inside another folder.
 
 Let's try if we can see more files inside that folder just removing the `hint.html` file from the URL.
 
-![Web Exercise 01 Vulnerability](/.assets/img/weasel00_vuln.png)
+![Web Exercise 00 Vulnerability](/.assets/img/weasel00_vuln.png)
 
-As we can see, the web is vulnerable to Directory Listing due to a bad configuration of the http server.
+As we can see, the web is vulnerable to Directory Listing due to a bad configuration of the HTTP server.
 
 So entering the folder **flag/** we discover the `flag.txt` file with the solution to this exercise.
 
 > [!TIP]
-> In a real scenario, you could use a technique called Fuzzing to discover directories, files, subdomains and many more.
+> In a real scenario, you could use a technique called **Fuzzing** to discover directories, files, subdomains and many more.
 > We will see more about this in the next exercise.
 
 ###### Example of Fuzzing with wfuzz
@@ -103,6 +103,15 @@ So entering the folder **flag/** we discover the `flag.txt` file with the soluti
 ![Fuzzing](/.assets/img/weasel00_result.png)
 
 #### ex01
+
+Next exercise seems solved in a similar maner, but this time we do not have any hint.
+
+![Web Exercise 01](/.assets/img/weasel01_web.png)
+
+Let's apply what we learned in previous exercise, we can think about the same vulnerability,
+so using the same technique we will use wfuzz to enumerate hidden directories.
+
+![Fuzzing](/.assets/img/weasel01_result.png)
 
 #### ex02
 
